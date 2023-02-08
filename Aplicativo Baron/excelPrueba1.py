@@ -1,0 +1,45 @@
+# OPCION 1 --> OPENPYXL
+
+import openpyxl
+import pandas as pd
+
+path = "archivos/comprobacion.xlsx"
+
+df_recibos = pd.read_excel(path)
+print("c.values¨")
+print("¨¨¨¨¨¨¨¨¨¨¨")
+print(df_recibos.columns.values)
+print("values¨")
+print("¨¨¨¨¨¨¨¨¨¨¨")
+print(df_recibos.values[0])
+print("¨¨¨¨¨¨¨¨¨¨¨")
+print("¨¨¨¨¨¨¨¨¨¨¨")
+#print("info")
+#print("¨¨¨¨¨¨¨¨¨¨¨")
+#print(df_recibos.info)
+print("¨¨¨¨¨¨¨¨¨¨¨")
+print("¨¨¨¨¨¨¨¨¨¨¨")
+print("¨¨¨¨¨¨¨¨¨¨¨")
+print(df_recibos.shape)
+df_recibos.drop([0], axis =0, inplace = True)
+#df_recibos = pd.read_excel(path, usecols=[0, 2, 3])
+print("¨_________ELIMINO 2 FILASSSSS+++++++++¨")
+print("¨¨¨¨¨¨¨¨¨¨¨")
+print("c.values¨")
+print("¨¨¨¨¨¨¨¨¨¨¨")
+print(df_recibos.columns.values)
+print("values¨")
+print("¨¨¨¨¨¨¨¨¨¨¨")
+print(df_recibos.values[0])
+##print("¨¨¨¨¨¨¨¨¨¨¨")
+#print(df_recibos.info)
+print("¨¨¨¨¨¨¨¨¨¨¨")
+print("¨¨¨¨¨¨¨¨¨¨¨")
+print(df_recibos.shape)
+print("¨¨¨¨¨FIN¨¨¨¨")
+#print(df_recibos.values[1])
+#print(df_recibos.values)
+#print(len(df_recibos))
+length = len(df_recibos)
+recibos = []
+#print(df_recibos.info)
